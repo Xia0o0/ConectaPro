@@ -1,0 +1,142 @@
+:root {
+    --bg-color: #FAFAFA;
+    --text-color: #212121;
+    --primary-color: #1A73E8;
+    --card-bg: #E8F0FE;
+    --font-text: 'Inter', sans-serif;
+    --font-title: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-title);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.banner {
+    flex: 1;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner h1 {
+    margin-bottom: 1rem;
+}
+
+.forms-wrapper {
+    flex: 1;
+    padding: 3rem;
+    position: relative;
+}
+
+.form-section {
+    display: none;
+}
+
+.form-section.active {
+    display: block;
+}
+
+.form-section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--font-text);
+    background-color: var(--card-bg);
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-family: var(--font-text);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #1557b0;
+}
+
+.toggle-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.toggle-link a {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .banner {
+        padding: 2rem;
+    }
+}
