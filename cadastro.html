@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - ConectaPro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Banner Lateral -->
+        <div class="banner">
+            <h1>ConectaPro</h1>
+            <p>Junte-se à nossa comunidade e faça parte da transformação da educação!</p>
+        </div>
+
+        <!-- Área de Formulários -->
+        <div class="forms-wrapper">
+            
+            <!-- Formulário de Cadastro -->
+            <div id="cadastro-section" class="form-section active">
+                <h2>Crie sua conta</h2>
+                <form id="cadastro-form" action="login.html" method="GET">
+                    <div class="form-group">
+                        <label for="cad-nome">Nome Completo</label>
+                        <input type="text" id="cad-nome" required placeholder="João da Silva">
+                    </div>
+                    <div class="form-group">
+                        <label for="cad-email">E-mail</label>
+                        <input type="email" id="cad-email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="cad-senha">Senha</label>
+                        <input type="password" id="cad-senha" required placeholder="Crie uma senha forte">
+                    </div>
+                    <div class="form-group">
+                        <label for="cad-perfil">Perfil</label>
+                        <select id="cad-perfil" required>
+                            <option value="">Selecione um perfil...</option>
+                            <option value="mentor">Quero ser Mentor</option>
+                            <option value="aprendiz">Quero ser Aprendiz</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cad-area">Área de Interesse</label>
+                        <input type="text" id="cad-area" required placeholder="Ex: Matemática, Programação">
+                    </div>
+                    <button type="submit" class="btn">Cadastrar</button>
+                </form>
+                <div class="toggle-link">
+                    Já tem uma conta? <a href="login.html">Faça Login</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -34,67 +34,12 @@
                     <button type="submit" class="btn">Entrar</button>
                 </form>
                 <div class="toggle-link">
-                    Ainda não tem uma conta? <a onclick="toggleForms()">Cadastre-se</a>
-                </div>
-            </div>
-
-            <!-- Formulário de Cadastro -->
-            <div id="cadastro-section" class="form-section">
-                <h2>Crie sua conta</h2>
-                <form id="cadastro-form" onsubmit="handleCadastro(event)">
-                    <div class="form-group">
-                        <label for="cad-nome">Nome Completo</label>
-                        <input type="text" id="cad-nome" required placeholder="João da Silva">
-                    </div>
-                    <div class="form-group">
-                        <label for="cad-email">E-mail</label>
-                        <input type="email" id="cad-email" required placeholder="seu@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="cad-senha">Senha</label>
-                        <input type="password" id="cad-senha" required placeholder="Crie uma senha forte">
-                    </div>
-                    <div class="form-group">
-                        <label for="cad-perfil">Perfil</label>
-                        <select id="cad-perfil" required>
-                            <option value="">Selecione um perfil...</option>
-                            <option value="mentor">Quero ser Mentor</option>
-                            <option value="aprendiz">Quero ser Aprendiz</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="cad-area">Área de Interesse</label>
-                        <input type="text" id="cad-area" required placeholder="Ex: Matemática, Programação">
-                    </div>
-                    <button type="submit" class="btn">Cadastrar</button>
-                </form>
-                <div class="toggle-link">
-                    Já tem uma conta? <a onclick="toggleForms()">Faça Login</a>
+                    Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <script>
-        function toggleForms() {
-            const login = document.getElementById('login-section');
-            const cadastro = document.getElementById('cadastro-section');
-            
-            if (login.classList.contains('active')) {
-                login.classList.remove('active');
-                cadastro.classList.add('active');
-            } else {
-                cadastro.classList.remove('active');
-                login.classList.add('active');
-            }
-        }
-
-        function handleCadastro(event) {
-            event.preventDefault(); // Impede o envio real do formulário
-            alert("Cadastro realizado com sucesso! Direcionando para o login...");
-            toggleForms(); // Simula o direcionamento para os campos de Login
-        }
-    </script>
 </body>
 </html>
