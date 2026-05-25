@@ -8,19 +8,19 @@ O principal objetivo do projeto é alinhar-se ao **ODS 4 (Educação de Qualidad
 O projeto não utiliza nenhum framework (conforme exigência do edital) e é construído inteiramente com HTML5 Semântico e Vanilla CSS.
 
 - `index.html`: Página principal contendo as informações do projeto, como funciona, os benefícios para mentores/aprendizes e a listagem de mentores em destaque.
-- `login.html`: Página contendo formulários interativos (via Vanilla JS simples) para Login e Cadastro de novos usuários.
+- `login.html`: Página contendo formulário de login de usuários.
+- `cadastro.html`: Página contendo formulário para cadastro de novos usuários.
 - `css/style.css`: Arquivo de estilização responsável pelo visual da página principal.
-- `css/login.css`: Arquivo de estilização da página de login e cadastro.
+- `css/login.css`: Arquivo de estilização compartilhado entre as páginas de login e cadastro.
 
 ## 👥 Integrantes da Equipe
 
-- **Thiago** - Desenvolvedor Front-End ([Currículo](https://xia0o0.github.io/))
+- **Thiago** - Desenvolvedor Front-End ([Currículo](https://xia0o0.github.io/curriculo/))
 - **Henrique** - Desenvolvedor Front-End ([Currículo](https://henriquemarcsfhy.github.io/meu-curriculo/))
 
 ## 🌐 Tecnologias Utilizadas
-- HTML5
+- HTML5 Semântico
 - CSS3 (Flexbox & CSS Grid)
-- JavaScript (Apenas para a interação dos modais de login)
 
 ---
 *Projeto acadêmico desenvolvido para a disciplina de Programação Web Front-End.*
